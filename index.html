@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MOKARELA</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <!--INICIO -->
+    <section id="inicio">
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                               ENCABEZADO                                -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>MOKARELA</h1>
+                </div>
+                <nav id="nav" class=""">
+                    <ul>
+                        <li>
+                            <a href="#bebidas" onclick="seleccionar()">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                <span>BEBIDAS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#frappes" onclick="seleccionar()">
+                                <i class="fa-solid fa-martini-glass-empty"></i>
+                                <span>FRAPPÉS</span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#postres" onclick="seleccionar()">
+                                <i class="fa-solid fa-stroopwafel"></i>
+                                <span>POSTRES</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#empanadas" onclick="seleccionar()">
+                                <i class="fa-solid fa-hotdog"></i>
+                                <span>EMPANADAS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tostadas" onclick="seleccionar()">
+                                <i class="fa-solid fa-bread-slice"></i>
+                                <span>TOSTADAS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#hamburguesas" onclick="seleccionar()">
+                                <i class="fa-solid fa-burger"></i>
+                                <span>HAMBURGUESAS</span>
+                            </a>
+                        </li>
+                            
+                    </ul> 
+                </nav>
+                <div class="social">
+                    <a href="tel: 9########">
+                        <i class="fa-solid fa-phone"></i>
+                        9########
+                    </a>
+                    <a href="https://www.facebook.com/pasteleriacafemokarela" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            
+        </header>
+        
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                CARRUSEL                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{"wrapAround":true,
+            "pageDots":false, "autoPlay":true}'>
+                <div class="gallery-cell">
+                    <img src="img/IMG_0727.JPG" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/MOKA2.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/MOKA1.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Mokarela: ¡Donde el café es una fiesta y tú estás invitado!</h2>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit repellat vitae praesentium officiis repudiandae autem, ratione odit impedit blanditiis similique totam maiores tempora doloremque doloribus, labore, illo suscipit cum ipsam!</p>
+                <button>Leer Mas</button> -->
+            </div>
+        </div>
+    </section>
+
+    
+    <!--SABORES-->
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 BEBIDAS                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+
+    <section id="bebidas">
+        <h2>BEBIDAS</h2>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/cafepasado.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAFE PASADO</h3>
+                    <a class="precio">3.50</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/cafeamericano.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAFE AMERICANO</h3>
+                    <a class="precio">S/. 4.50</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/capuccino.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAFE CAPUCCINO</h3>
+                    <a class="precio">S/. 7.00</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/capuccino-crema.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAFE CAPUCCINO CON CREMA</h3>
+                    <a class="precio">S/. 6.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/leche.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>LECHE</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/cafeconleche.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAFE CON LECHE</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/chocolate.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CHOCOLATE</h3>
+                    <a class="precio">5.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/infusiones.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>INFUCIONES</h3>
+                    <a class="precio">S/. 3.50</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/cafelatte.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAFE LATTE</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila-uno">
+            <div class="card-uno">
+                <figure>
+                    <img class="img-uno" src="img/tepiteado.jpg" alt="">
+                </figure>
+                <div class="contenido-uno">
+                    <h3>TÉ PITEADO</h3>
+                    <a class="precio">S/. 6.00</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                              BEBIDAS FRIAS                              -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section id="bebidas">
+            <h2>BEBIDAS FRIAS</h2>
+            <div class="fila">
+                <div class="card">
+                    <figure>
+                        <img src="img/limonada.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>LIMONADA</h3>
+                        <a class="precio"> CHICO S/. 4.00</a>
+                        <a class="precio">GRANDE S/. 7.00</a>
+                        <a class="precio">JARRA(1lt) S/. 12.00</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <figure>
+                        <img src="img/chichamorada.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>CHICHA MORADA</h3>
+                        <a class="precio"> CHICO S/. 4.00</a>
+                        <a class="precio">GRANDE S/. 7.00</a>
+                        <a class="precio">JARRA(1lt) S/. 12.00</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="img/limonadafrozen.jpg" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>LIMONADA FROZEN</h3>
+                        <a class="precio"> CHICO S/. 5.00</a>
+                        <a class="precio">GRANDE S/. 8.00</a>
+                        <a class="precio">JARRA(1lt) S/. 14.00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="card">
+                    <figure>
+                        <img src="img/" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>GASEOSA PERSONAL</h3>
+                        <a class="precio">S/. 1.50</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <figure>
+                        <img src="img/" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>GASEOSA (1lt)</h3>
+                        <a class="precio">S/. 5.50</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="img/" alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>AGUA S/ GAS</h3>
+                        <a class="precio">S/. 1.50</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 FRAPPES                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+    <section id="bebidas">
+        <h2>FRAPPES</h2>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/oreo.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>OREO</h3>
+                    <a class="precio">S/. 8.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/frapfresa.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>FRESA</h3>
+                    <a class="precio">S/. 7.00</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/frapuccino.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>FRAPUCCINO</h3>
+                    <a class="precio">S/. 7.00</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 POSTRES                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+    <section id="bebidas">
+        <h2>POSTRES</h2>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/porciondetorta.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PORCION DE TORTA</h3>
+                    <a class="precio">S/. 6.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/vasitodetorta.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>VASITO DE TORTA</h3>
+                    <a class="precio">S/. 6.00</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/copitamousse.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>COPITA MOUSSE</h3>
+                    <a class="precio">S/. 6.00</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/pyedemanzana.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PYE DE MANZANA</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/pyedemembrillo.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PYE DE MEMBRILLO</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/pyedelimon.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PYE DE LIMON</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/pyedemaracuya.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PYE DE MARACUYA</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/tortaletadefrutas.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>TORTALETA DE FRUTAS</h3>
+                    <a class="precio">S/. 4.50</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/tortateladechocolate.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>TORTALETA DE CHOCOLATE</h3>
+                    <a class="precio">S/. 4.50</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/pasteldechoclo.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PASTEL DE CHOCLO</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/chiffon.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CHIFFON</h3>
+                    <a class="precio">S/. 5.50</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/cake.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CAKE</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/gelatina.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>GELATINA</h3>
+                    <a class="precio">S/. 2.50</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/flan.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>FLAN</h3>
+                    <a class="precio">S/. 3.00</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/cupcakes.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CUPCAKES</h3>
+                    <a class="precio">S/. 3.50</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/rosquitasdeanis.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>ROSQUITAS DE ANIS</h3>
+                    <a class="precio">S/. 4.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/borrachitos.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>BORRACHITOS</h3>
+                    <a class="precio">S/. 1.00</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                EMPANADAS                                -->
+        <!-- ----------------------------------------------------------------------- -->
+
+    <section id="bebidas">
+        <h2>EMPANADAS</h2>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/carnepollo.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CARNE, POLLO, QUESO, MIXTA</h3>
+                    <a class="precio">S/. 3.50</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/frapfresa.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>SANDWICH DE POLLO</h3>
+                    <a class="precio">S/. 5.50</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                TOSTADAS                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+
+    <section id="bebidas">
+        <h2>TOSTADAS</h2>
+        <div class="fila">
+            <div class="card">
+                <figure>
+                    <img src="img/tostadadequeso.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>QUESO</h3>
+                    <a class="precio">S/. 6.00</a>
+                </div>
+            </div>  
+            <div class="card">
+                <figure>
+                    <img src="img/tostadadequesoconjamon.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>JAMON C/ QUESO</h3>
+                    <a class="precio">S/. 7.00</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="img/italiana.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>ITALIANA</h3>
+                    <a class="precio">S/. 8.00</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
